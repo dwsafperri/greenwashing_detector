@@ -212,7 +212,7 @@ def cleaningText(text):
         'satuan', 'min', 'pcs', 'pack', 'ml', 'meter', 'mm', 'ltr', 'liter', 'unit', 'item', 'asli', 'unboxing', 'video', 'detail', 'size', 'diamater',
         'xx', 'senin', 'jumat', 'sabtu', 'minggu','wa', 'ukuran', 'deskripsi', 'pemesanan', 'kategori', 'tersedia', 'harga', 'grosir', 'hubungi', 'wa',
         'barang', 'pengiriman', 'indonesia', 'etalase', 'kondisi', 'berat', 'satuan', 'etalase', 'baru', 'mx', 'a', 'gr', 'amp', 'ongkir', 'cod', 'g',
-        'Ã¢', 'Ã°', 'â€™', 'â€˜', 'Â', 'gr', 'p', 't', 'l', 'terima', 'kasih', 'xcm', 'â', 'ââ', 'denganâ' 'chat'
+        'Ã¢', 'Ã°', 'â€™', 'â€˜', 'Â', 'gr', 'p', 't', 'l', 'terima', 'kasih', 'xcm', 'â', 'ââ', 'denganâ' 'chat', 'untukâ', 'danâ', 'chat', 'admin'
     ]
 
     text = ' '.join([word for word in text.split() if word.lower() not in [w.lower() for w in useless_words]])
