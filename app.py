@@ -403,7 +403,7 @@ def load_models():
     """Load the trained models and vectorizer for prediction"""
     try:
         tfidf_vectorizer = joblib.load("tfidf_vectorizer.pkl")
-        svm_model = joblib.load("svm_model.pkl")
+        svm_model = joblib.load("svm_model (3).pkl")
         return tfidf_vectorizer, svm_model
     except Exception as e:
         st.error(f"Error loading models: {e}")
