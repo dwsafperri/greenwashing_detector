@@ -402,7 +402,7 @@ clean_df['polarity'] = results[1]
 def load_models():
     """Load the trained models and vectorizer for prediction"""
     try:
-        tfidf_vectorizer = joblib.load("tfidf_vectorizer (1).pkl")
+        tfidf_vectorizer = joblib.load("tfidf_vectorizer (2).pkl")
         svm_model = joblib.load("svm_model (3).pkl")
         return tfidf_vectorizer, svm_model
     except Exception as e:
@@ -664,7 +664,7 @@ elif selected == "🔍 Cek Deskripsi Produk":
     
     col1, col2 = st.columns([1,3])
     with col1:
-        check_button = st.button("🔍 Analisis Deskripsi", use_container_width=True)
+        check_button = st.button("🔍 Analisis Deskripsi", width=400)
     
     with col2:
         st.markdown("")  # For spacing
@@ -732,7 +732,7 @@ elif selected == "🔍 Cek Deskripsi Produk":
                     st.image(
                         image=result_img,
                         caption=None,  # No caption needed since we have header
-                        use_container_width=True
+                        width=400
                     )
                 
                 # Add space between image and text
