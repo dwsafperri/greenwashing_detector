@@ -664,7 +664,7 @@ elif selected == "🔍 Cek Deskripsi Produk":
     
     col1, col2 = st.columns([1,3])
     with col1:
-        check_button = st.button("🔍 Analisis Deskripsi", width=400)
+        check_button = st.button("🔍 Analisis Deskripsi")
     
     with col2:
         st.markdown("")  # For spacing
