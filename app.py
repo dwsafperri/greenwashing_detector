@@ -787,7 +787,7 @@ elif selected == "🔍 Cek Deskripsi Produk":
         with col2:
             if 'SVM' in prediction_confidence:
                 st.markdown(f"""
-                <div class="stcard metric-card" style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+                <div class="stcard metric-card" style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:space-between; align-items:center; padding:10px; min-height: 180px;">
                     <h4 style="margin-top:0;">Prediksi SVM</h4>
                     <p style="font-size:24px; font-weight:bold; margin:10px 0;">{model_predictions['SVM']}</p>
                     <p style="font-size:14px; margin-bottom:0;">Confidence: {prediction_confidence['SVM']:.1f}%</p>
@@ -795,7 +795,7 @@ elif selected == "🔍 Cek Deskripsi Produk":
                 """, unsafe_allow_html=True)
             else:
                 st.markdown("""
-                <div class="stcard metric-card" style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+                <div class="stcard metric-card" style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:space-between; align-items:center; padding:10px; min-height: 180px;">
                     <h4 style="margin-top:0;">Prediksi SVM</h4>
                     <p style="font-size:18px; margin:10px 0;">Model tidak tersedia</p>
                     <p style="font-size:14px; margin-bottom:0;">&nbsp;</p>
