@@ -536,7 +536,7 @@ if selected == "📚 Tentang Greenwashing":
     with tab1:
         # All descriptions word cloud
         list_words = ' '.join([' '.join(tweet) for tweet in clean_df['text_stopword']])
-        wordcloud = WordCloud(width=400, height=200, 
+        wordcloud = WordCloud(width=800, height=400, 
                              background_color='white', 
                              colormap='viridis',
                              min_font_size=10,
@@ -557,7 +557,7 @@ if selected == "📚 Tentang Greenwashing":
         greenhonesty.index += 1
         
         list_words = ' '.join([' '.join(tweet) for tweet in greenhonesty['text_stopword']])
-        wordcloud_greenhonesty = WordCloud(width=400, height=200, 
+        wordcloud_greenhonesty = WordCloud(width=800, height=400, 
                                          background_color='white',
                                          colormap='YlGn',
                                          min_font_size=10,
@@ -578,7 +578,7 @@ if selected == "📚 Tentang Greenwashing":
         greenwashing.index += 1
         
         list_words = ' '.join([' '.join(tweet) for tweet in greenwashing['text_stopword']])
-        wordcloud_greenwashing = WordCloud(width=400, height=200, 
+        wordcloud_greenwashing = WordCloud(width=800, height=400, 
                                          background_color='white',
                                          colormap='Reds',
                                          min_font_size=10,
