@@ -803,8 +803,18 @@ elif selected == "🔍 Cek Deskripsi Produk":
                 """, unsafe_allow_html=True)
                 
         with col3:
-            confidence_level = "Tinggi" if 'SVM' in prediction_confidence and prediction_confidence['SVM'] > 80 else "Sedang"
-            confidence_color = "#4CAF50" if confidence_level == "Tinggi" else "#FFC107"
+            # Jika greenwashing = kepercayaan produk rendah
+            # Jika greenhonesty = kepercayaan produk tinggi
+            if 'SVM' in prediction_confidence:
+                if model_predictions['SVM'] == 'greenwashing':
+                    confidence_level = "Rendah"
+                    confidence_color = "#F44336"
+                else:
+                    confidence_level = "Tinggi"
+                    confidence_color = "#4CAF50"
+            else:
+                confidence_level = "Rendah"
+                confidence_color = "#F44336"
             
             st.markdown(f"""
             <div class="stcard metric-card" style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:space-between;">
