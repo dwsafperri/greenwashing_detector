@@ -510,7 +510,7 @@ if selected == "📚 Tentang Greenwashing":
                 <ul>
                     <li>✅ <b>Ekolabel Nasional Indonesia</b> yang dikeluarkan oleh Kementerian Lingkungan Hidup dan Kehutanan (KLHK)</li>
                     <li>✅ <b>Sertifikasi PROPER</b> (Program Penilaian Peringkat Kinerja Perusahaan) dari KLHK</li>
-                    <li>🌱 Sertifikasi internasional seperti Ecolabel, Energy Star, atau USDA Organic</li>
+                    <li>🌱 Sertifikasi internasional seperti Ekolabel dan ISO 14001</li>
                 </ul>
             </li>
             <li>Baca dengan seksama <b>laporan keberlanjutan</b> atau tanggung jawab sosial perusahaan</li>
